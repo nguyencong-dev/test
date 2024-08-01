@@ -1,0 +1,104 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --x:10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* CSS - NAV */
+nav{
+    background-color: cadetblue;
+}
+ul.menu{
+    list-style-type: none;
+     padding: 0;
+    margin: 0;
+}
+.menu >li >a{
+    text-decoration: none;
+    padding: 1.5rem;
+    display: block;
+}
+.menu >li >a:hover{
+    background-color: darkblue;
+    color: white;
+}
+nav >ul:first-child  >li{
+    border-left: 1px solid white;
+}
+
+/* CSS - HEADER */
+header{
+    background-image: linear-gradient(blue,lightblue);
+}
+h1.subject{
+    color: white;
+}
+/* CSS - ASIDE */
+.ads > div{
+    width: 14%;
+    background-color: blue;
+    text-align: center;
+    margin-top: var(--x);
+    border-radius: var(--x);
+    position: fixed;
+}
+.ads > div >a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10rem 0;
+}
+.ads > div >a:hover{
+    border-radius: var(--x);
+    background-color: aqua;
+    color: darkorange;
+}
+.ads > div:first-child{
+    left: 0.5%;
+}
+.ads >div:last-child{
+    right:0.5%
+}
+/* CSS - MAIN */
+.course{
+    width: 70%;
+    margin: 0 auto;
+}
+h2.subject{
+    background-color: blue;
+    padding: 1rem;
+    margin-bottom: 0;
+    border-radius: var(--x) var(--x) 0 0;
+}
+.forum{
+    background-color: lightblue;
+    border-bottom: 1px solid white;
+}
+.user{
+    width: 120px;
+    border-radius: 50%;
+    padding: var(--x);
+}
+ul.info{
+    list-style-type: none;
+}
+p, ul.info >li{
+    color: white;
+}
+.forum a{
+    text-decoration: none;
+}
+.forum a:hover{
+    color: red;
+}
+.forum p{
+    direction: rtl;
+}
+.forum:last-child{
+    border-radius: 0 0 var(--x) var(--x);
+}
